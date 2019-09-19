@@ -1,0 +1,238 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: center;
+  text-align: center;
+  vertical-align: center;
+  justify-items: center;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 46px;
+  background-color: #1b1b1b;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  position: relative;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+.dropdown-one {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  background-color: darkslategrey;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown-two {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  left: 160px;
+  top: 0px;
+  min-width: 160px;
+  background-color: dimgrey;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown:hover .dropdown-one,
+#link1:hover > .dropdown-two {
+  display: block;
+}
+.dropdown-one .dItem {
+  color: white;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+.dropdown-one .dItem:hover,
+.dropdown-two a:hover {
+  background-color: red;
+}
+.truCenter {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: center;
+  text-align: center;
+  vertical-align: center;
+  justify-items: center;
+}
+.bgOne {
+  background-image: url("../img/backgroundIndex.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  z-index: -1;
+}
+.cbBorder {
+  filter: drop-shadow(-15px 20px 50px -6px #000000);
+}
+.contentPost {
+  display: none;
+  font-size: 2rem;
+}
+.contentPost1 {
+  display: none;
+  font-size: 2rem;
+}
+.contentPost2 {
+  display: none;
+  font-size: 2rem;
+}
+.splash {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: center;
+  text-align: center;
+  vertical-align: center;
+  justify-items: center;
+  height: 94vh;
+}
+.splash h1 {
+  display: flex;
+  font-size: 2rem;
+}
+.splash h2 {
+  color: white;
+}
+html,
+body {
+  overflow: hidden;
+}
+html {
+  background-image: url("../img/backgroundIndex.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  z-index: -1;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: center;
+  text-align: center;
+  vertical-align: center;
+  justify-items: center;
+  flex-direction: column-reverse;
+}
+.introBox {
+  border-radius: 6px;
+  height: 45vh;
+  width: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxWork {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 420px 650px 0 0;
+  border-color: transparent transparent transparent transparent;
+}
+.boxPlay {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 420px 650px ;
+  border-color: transparent transparent transparent transparent;
+}
+.workHover {
+  border: 2px solid #ffa200;
+  background-color: #00b330;
+  height: 350px;
+  width: 550px;
+  position: absolute;
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+  z-index: 1;
+  bottom: 5px;
+  cursor: pointer;
+}
+.workHover:hover {
+  transform: scale(1.35);
+  transition: 2s;
+}
+.workHover h1 {
+  justify-content: flex-start;
+  position: relative;
+  top: -10px;
+  left: 10px;
+}
+.workHover p {
+  text-align: left;
+  position: relative;
+  left: 15px;
+  bottom: 25px;
+}
+.workHover a {
+  background-color: initial;
+  position: absolute;
+  left: 30px;
+}
+.playHover {
+  border: 2px solid #00b330;
+  background-color: #ffa200;
+  height: 350px;
+  width: 550px;
+  position: absolute;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  z-index: 1;
+  right: -5px;
+  cursor: pointer;
+}
+.playHover:hover {
+  transform: scale(1.35);
+  transition: 2s;
+}
+.playHover h1 {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  position: relative;
+  top: 275px;
+  right: 10px;
+}
+.playHover p {
+  position: relative;
+  text-align: right;
+  top: 85px;
+  right: 15px;
+}
+.playHover a {
+  background-color: initial;
+  position: absolute;
+  top: 80px;
+  right: 35px;
+}
